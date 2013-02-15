@@ -1,3 +1,10 @@
-define([], function() {
-  return 'Hello from Yeoman!';
+define(['presenters/loginpresenter'], function(loginpresenter) {
+  return {
+      init: function () {
+
+          var l = new loginpresenter;
+          l.init();
+
+      }
+  };
 });
